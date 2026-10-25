@@ -95,7 +95,17 @@ If the new item is a readable book or note and you can get its English text, add
 
 The script is `mod/modSpokenPages`. The options file is `mod/bin/config/r4game/user_config_matrix/pc/modSpokenPages.xml`.
 
-On a book, Space or Y plays and pauses, Left Ctrl or LB stops, and X starts the page again. In the world, F6, F7, and F8 do the same. F6, F7, and F8 do not take jump, call horse, or walk.
+On a book, Space or Y plays and pauses, Left Ctrl or LB stops, and X starts the page again. Those keys are part of the book screen and work as soon as the mod is installed.
+
+In the world, F6 plays or pauses, F7 stops, and F8 starts the page again. The game only reads world keys from Documents\The Witcher 3\input.settings, not from the mod folder. With the game closed, paste these three lines under Exploration, Exploration_Replacer_Ciri, JumpClimb, Swimming, Diving, Boat, BoatPassenger, Combat, Combat_Replacer_Ciri, Horse, and Horse_Replacer_Ciri:
+
+```
+IK_F6=(Action=SPPlayPause)
+IK_F7=(Action=SPStop)
+IK_F8=(Action=SPRewind)
+```
+
+They do not replace jump, call horse, or walk. There are no controller binds outside a book.
 
 Options are under Options, Gameplay, Mods, Spoken Pages. Read aloud when opened, play once per book, and stop when the book closes start on. Volume starts at 50. Play once follows the read mark the game already saves.
 
