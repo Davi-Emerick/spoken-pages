@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.cache/
+voices/render.status
+voices/books.json
+voices/book-audio.jsonl
+wwise/**/Originals/
+wwise/**/.cache/
+*.bnk
+soundspc.cache
+*.split

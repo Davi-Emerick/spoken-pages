@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+	<Group id="SpokenPages" displayName="Mods.SpokenPages">
+		<PresetsArray>
+			<Preset id="0" displayName="spPresetDefault">
+				<Entry varId="Volume" value="50"/>
+				<Entry varId="AutoStart" value="true"/>
+				<Entry varId="StopOnClose" value="true"/>
+				<Entry varId="OncePerBook" value="true"/>
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="Volume" displayName="Volume" displayType="SLIDER;0;100;100" tags="nonLocalizedName"/>
+			<Var id="AutoStart" displayName="Read aloud when opened" displayType="TOGGLE" tags="nonLocalizedName"/>
+			<Var id="OncePerBook" displayName="Play once per book" displayType="TOGGLE" tags="nonLocalizedName"/>
+			<Var id="StopOnClose" displayName="Stop when the book closes" displayType="TOGGLE" tags="nonLocalizedName"/>
+		</VisibleVars>
+	</Group>
+</UserConfig>
